@@ -1,0 +1,452 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.content-header{
+    display: grid;
+    grid-template-columns: 10fr 1fr; /* Satu kolom fleksibel dan satu kolom 10 kali lebih besar */
+    gap: 10px; /* Jarak antar grid item */
+    padding: 0 1%;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+}
+
+
+.content-header .gambar img {
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+
+.content-header .logo img {
+  height: 150px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+/* ==================================================== */
+
+
+
+.navbar{
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0%;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+    background-color: goldenrod;
+    outline: 5px solid black;
+
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1%;
+}
+/* ------------------------------------------------------------ */
+
+
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color .5s ease-in;
+    padding: 5px;
+}
+.navbar .menu li a:hover{
+    color: black;
+    background-color: white;
+    padding: 5px;
+    transition: .5s ease-in;
+    border-radius: 5px;
+}
+.navbar.sticky .menu li a:hover{
+    color: brown;
+    background-color: white;
+    transition: .3s ease-in-out;
+
+}
+
+
+.navbar .menu .active {
+
+  color: black;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.navbar .menu .active:hover{
+  background: none !important;
+  outline: 2px solid white;
+  color: white !important;
+}
+
+
+
+
+/* ================================================ */
+
+.isi{
+    display: grid;
+    grid-template-columns: 8fr 2fr; /* Satu kolom fleksibel dan satu kolom 10 kali lebih besar */
+    background-color: black;
+    height: auto;
+}
+
+.isi .konten-utama{
+    background-color: aliceblue;
+    height: 100%;
+    box-shadow: 5px 5px 10px 0px black;
+    z-index: 1000;
+}
+
+.isi .sidebar {
+    background-color: grey;
+    height: 100%;
+    color: #000;
+    padding: 20px 10px 0;
+}
+
+.sidebar-menu{
+  padding: 10px 10px;
+  background-color: #D7DBDD;
+  box-shadow: 5px 5px 10px 0px black;
+  border-radius: 10px;
+}
+
+.sidebar-menu .artikel{
+  padding: 10px 10px;
+  background-color: bisque;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px black;
+
+}
+
+.sidebar-menu .galeri{
+  padding: 10px 10px;
+  background-color: bisque;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px black;
+}
+
+.sidebar .galeri img{
+  height: 200px;
+  width: 100%;
+  border-radius: 50px 0 50px 0;
+  box-shadow: 5px 5px 10px 0px black;
+}
+
+.sidebar .galeri img:hover{
+  transform: scale(1.2);
+  z-index: 1000;
+  transition: .2s ease-in-out;
+  outline: 2px solid crimson;
+}
+
+.sidebar-menu .karir{
+  padding: 10px 10px;
+  background-color: bisque;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px black;
+}
+
+.sidebar-menu .karir ul{
+  list-style: square;
+  color: black;
+  background-color: khaki;
+  border-radius: 15px 0 15px 0;
+  padding: 10px 20px;
+  margin: auto;
+  box-shadow: 5px 5px 5px 0px grey;
+}
+
+.sidebar-menu p{
+  text-align: justify;
+  cursor: pointer;
+}
+
+.sidebar-menu button{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  outline: 3px solid white;
+  box-shadow: 5px 5px 10px 0px black;
+  transition: .3s ease-in-out;
+}
+
+.sidebar-menu button:hover{
+  background-color: goldenrod;
+  color: black;
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+/* ====================================================== */
+
+
+/* about */
+
+
+
+/* ================================================================== */
+/* about section styling */
+.about .title{
+    margin: 2rem 0;
+    color: black;
+    text-align: center;
+  }
+  
+
+  .about-content{
+    display: flex;
+    padding: 0 5%;
+  }
+
+  .about .title::after{
+      content: "";
+  }
+  .about .about-content .left{
+      width: 45%;
+  }
+  .about .about-content .left img{
+      height: 300px;
+      width: 400px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 5px 5px 10px 0px black;
+  }
+  .about .about-content .right{
+      width: 55%;
+  }
+  .about .about-content .right .text{
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 10px;
+  }
+  .about .about-content .right .text span{
+      color: crimson;
+  }
+  .about .about-content .right p{
+      text-align: justify;
+  }
+  .about .about-content .right a{
+      display: inline-block;
+      background: #FAD7A0;
+      color: black;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 10px 30px;
+      margin-top: 20px;
+      border-radius: 6px;
+      border: 2px solid black;
+      transition: all 0.3s ease;
+      box-shadow: 5px 2px 10px 0px black;
+  }
+  .about .about-content .right a:hover{
+      color: black;
+      background: none;
+  }
+  
+  
+
+/* ==================================================== */
+
+
+.trip {
+    background-color:#D7DBDD;
+    padding: 5% 5%;
+  }
+
+
+
+
+  .trip .judul{
+    margin: auto;
+    padding: 0 0 1rem;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+  }
+  
+  .trip .judul span{
+    color: #F7DC6F ;
+    background-color: #111;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  
+   .trip .judul-p{
+    padding-bottom: 2.5rem;
+    font-size: 1.5rem;
+    color: black;
+    margin: auto;
+    text-align: center;
+  }
+  
+  
+  .trip__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+  
+  .trip__card {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trip__card img{
+    height: 270px;
+    width: 100%;
+  }
+  
+  .trip__card:hover {
+    box-shadow: 5px 5px 30px rgb(66, 58, 58);
+    transition: .3s ease-in-out;
+    transform: scale(1.2);
+  }
+  
+  .trip__details {
+    padding: 1rem;
+    display: grid;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(33, 32, 32);
+    cursor: pointer;
+    height: 130px;
+  }
+  
+  .booking__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .book__now {
+    padding: 0.5rem 1.5rem;
+    color: lightyellow;
+    outline: none;
+    border: 1px solid lightyellow;
+    border-radius: 5rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .book__now:hover {
+    color: black;
+    background-color: #FFFACD;
+  }
+  
+  
+
+
+
+/* ================================================== */
+
+
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 2rem 23px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+
+}
+footer span a{
+    color: khaki;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+    color: crimson;
+}
+
+footer span .harimotor{
+  color: khaki;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer span .harimotor:hover{
+  color: crimson;
+}
+
+/* -------------------------------- */
+
+footer .sosmed{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+footer .sosmed i:hover{
+  color: yellow;
+}
+
+
+
+
+/* ================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
